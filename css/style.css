@@ -5,6 +5,7 @@ body {
   color: #111827
   }
 
+
 /****************   Nav Section **********************/
 nav {
 	display: flex;
@@ -105,7 +106,7 @@ section a:hover {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .card img {
@@ -118,6 +119,9 @@ section a:hover {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
@@ -178,3 +182,15 @@ textarea {
   margin: .35rem 0 1rem;
    
 }
+
+nav a {
+  color: #ffffff;          
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
